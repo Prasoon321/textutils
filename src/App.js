@@ -1,24 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './Components/Navbar'
+// import Alert from './Components/Alert'
+import Textform from './Components/Textform';
+// import About from './Components/About';
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link,
+//   Routes
+// } from "react-router-dom";
+export const Error = () => {
+  <h1>OOPS WE COULD NOT WORK ON YOUR REQUEST</h1>
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Router> */}
+
+      <Navbar />
+      <div className="container my-3">
+        {/* <Routes> */}
+        {/* <Navbar title="title" /> */}
+        {/* <Route path="/" element={<Navbar />}>
+
+        </Route>
+        <Route path="/about" element={<About />}>
+        </Route>
+        <Route path="/textform" element={<Textform />}>
+        </Route>
+        <Route element={<Error />}></Route> */}
+        {/* </Routes> */}
+        {/* <Alert alert ={alert}/> */}
+        {/* <About /> */}
+        <Textform />
+      </div>
+      {/* // </Router> */}
+    </>
   );
 }
 
